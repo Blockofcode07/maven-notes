@@ -27,3 +27,30 @@ The process of building a computer program is usually managed by a build tool, a
 Artifact
 --------
 The word artifact is from the Latin phrase arte factum: arte meaning skill and factum meaning to make. In the software development life cycle, artifact usually refers to objects that are produced by people involved in the process. Examples would be design documents, data models, workflow diagrams, test matrices and plans, setup scripts including compiled binaries, and software packages. In most software development cycles, there’s usually a list of specific required artifacts that someone must produce and put on a shared drive or document repository for other people to view and share. Artifact may occasionally refer to the released code (in the case of a code library) or the released executable (in the case of a program). An artifact is the byproduct of software development.
+
+
+Build automation
+----------------
+Build automation is the process of automating the creation of a software build and the associated processes. This includes compiling computer source code into binary code, packaging binary code, and running automated tests. A build - the process that converts files and other assets under the developers’ responsibility into a software product in its final or consumable form - is automated when a final artifact(s) can be produced without direct human intervention and can be performed at any time with no information other than what is stored in the source code control repository.
+
+
+CI/CD
+-----
+CI/CD (Continuous Integration and Continuous Delivery/Deployment) is another commonly used term in the context of builds and build automation. The underlying goal of a CI/CD pipeline is for teams to deliver code changes more frequently and reliably. A modern-day CI/CD pipeline involves continuous development, continuous testing, continuous integration, continuous deployment, and continuous monitoring of a software application throughout the application’s development life cycle.
+
+The “CI” in CI/CD always refers to continuous integration, which is an automation process for developers who are checking in code. 
+
+Successful CI means new code changes to an app are regularly built, tested, and merged to a shared repository. It’s a solution to the problem, known as integration hell, of having too many branches of an application in development at once that might conflict with each other. A developer checks out a branch and makes their changes, but when attempting to merge the branch back finds too many merge conflicts that take longer to resolve than the time required to make the code change.
+
+The “CD” in CI/CD refers to continuous delivery and/or continuous deployment which are related concepts that are sometimes used interchangeably. 
+
+Continuous delivery usually means that a developer’s changes to an application are automatically bug tested and uploaded to a code repository (e.g., GitHub or Perforce). The uploaded changes can then be deployed to a staging or live production environment by the operations team. The goal of continuous delivery is to apply minimal effort to deploy new code. However, with continuous delivery, the buck stops at the code repository.
+
+Continuous deployment picks up where continuous delivery left off. Continuous deployment involves automatically releasing a developer’s code changes from the repository to the production environment, where they are then usable by customers. Sometimes, the term continuous deployment is also used to include the processes of continuous delivery.
+
+Often, the term CI/CD is used to mean all three connected practices of continuous integration, continuous delivery, and continuous deployment. 
+
+
+Conclusion
+----------
+Maven has become very popular over the years and the primary reason for its success is that it has defined a common interface for building software. Maven’s intelligence is implemented in the plugins it uses which can be retrieved from the Maven repository. Maven has abstracted common build tasks into programs that can be invoked via Maven and are known as plugins. Plugins are maintained centrally and shared universally and are the topic of our next lesson.
