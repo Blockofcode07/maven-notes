@@ -2,3 +2,28 @@ Introduction to Maven
 ---------------------
 
 Software is written by multiple teams and dozens of people in corporations that depend on already tested and released software components. This is very different from how students are taught to write software in undergraduate programs, and often the first struggle a new hire contends with is working effectively with the build ecosystem of a company. One of the major components in a build system is the build tool; Maven is the most popular build tool for Java products. Maven is much more than a build tool as we will learn. It can be used to manage an entire project.
+
+There are tools similar to Maven that are listed below:
+
+Ant
+Gradle
+Ivy
+Gulp
+Grunt
+Leiningen
+GNU Make
+
+We’ll start with the different terms and their meaning in the context of a build system.
+
+Build
+-----
+In software development, a build is the process of converting source code files into standalone software artifact(s) that can be run on a computer. The resulting artifact is sometimes referred to as the build. In an organization, there are usually several branches of code with varying degrees of stability that result in nightly builds and get deployed in various environments such as stage, test, or production.
+
+Build tool
+----------
+The process of building a computer program is usually managed by a build tool, a program that coordinates and controls other programs. Examples of such programs are Make, Gradle, Meister by OpenMake Software, Ant, Maven, Rake, SCons, and Phing. The build utility typically needs to compile the various files in the correct order, download dependencies, run unit and integration tests, and any other related tasks for producing binaries that can be deployed.
+
+
+Artifact
+--------
+The word artifact is from the Latin phrase arte factum: arte meaning skill and factum meaning to make. In the software development life cycle, artifact usually refers to objects that are produced by people involved in the process. Examples would be design documents, data models, workflow diagrams, test matrices and plans, setup scripts including compiled binaries, and software packages. In most software development cycles, there’s usually a list of specific required artifacts that someone must produce and put on a shared drive or document repository for other people to view and share. Artifact may occasionally refer to the released code (in the case of a code library) or the released executable (in the case of a program). An artifact is the byproduct of software development.
