@@ -1,0 +1,27 @@
+Plugins and Goals
+-----------------
+
+Plugin
+------
+Maven can accept plugins to perform various tasks. The core of Maven is limited and small, a harness that leverages the intelligence of the plugins attached to it to perform various tasks. Some of the most common plugins are:
+
+- Compiler Plugin: contains the logic to compile
+- Jar Plugin: contains the logic to create jars
+- Surefire Plugin: contains the logic to execute unit tests
+
+There are numerous other plugins that can be used. In fact, we can even write our own plugins. Remember, plugins are nothing but code that implement the logic to perform various tasks during the build process.
+
+
+Goal
+----
+A Maven plugin consists of goals which is a unit of work. You can think of it as representing the capability of a plugin. A goal is an action we want to take on the project defined by a POM (covered later) file. 
+
+
+We can examine the goals in a particular plugin using Maven’s help plugin. You can execute the commands in the below and see the goals printed out
+
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-compiler-plugin
+
+The command invokes the describe goal of the help plugin specified as help:describe. The goal takes arguments from the command line, which we specify using -D. The argument -Dplugin specifies the plugin we want to get details for.
+
+
+ 
